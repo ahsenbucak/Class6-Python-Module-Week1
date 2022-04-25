@@ -1,0 +1,19 @@
+###User Name, Surname, Student Number, 4 course names, Visa and Final grades will be required.
+#  The sum of 40% of the midterm grade and 60% of the final grade will give the year-end average.
+#  If the average is less than 50, “FAILED” on the screen, 50 and above, 
+# “PASSED” will be printed on the screen. This printing process is in 4 lessons.
+# will be done and the lessons will be written one after the other.
+
+username=input("Please enter your name")
+surname=input("Please enter your surname")
+studentnum=int(input("Please enter your school name"))
+
+for i in range(1,5):
+    lesson=input("Please enter your lesson's name:")
+    midterm=int(input("Please input your midterm note"))
+    final=int(input("Please enter your final note"))
+    result=midterm*40/100+final*60/100
+    if result>50:
+        print("PASSED")
+    else:
+        print("FAILED")
