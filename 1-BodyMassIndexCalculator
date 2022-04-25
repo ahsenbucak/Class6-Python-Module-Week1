@@ -1,0 +1,20 @@
+""""Parameter showing whether a person's weight is normal for their height.
+ It is called Body Mass Index. In short, a person's weight is equal to a person's height. 
+ If we divide it by its square, the body mass index is obtained. User's weight and height 
+ If the result by taking the length is below 25, NORMAL, if it is between 25-30 OVER WEIGHT, 
+ OBSE if 30-40, EXTREMELY OBSE if 40 and over print a warning. """
+
+# unit of Body Mass Index  is kg/m2 so we have to know unit of the amount whis is entered by user.
+
+print("Welcome to Body Mass Index Program")
+weight_user=int(input("Please enter your weight"))
+height_user=int(input("Please enter your height as cm"))
+parameter=weight_user/(height_user/100)**2
+if parameter>=40:
+    print("EXTREMELY OBSE")
+elif 30<=parameter<40:
+    print("OBSE")
+elif 25<=parameter<30:
+    print("OVER WEIGHT")
+else:
+    print("NORMAL")
